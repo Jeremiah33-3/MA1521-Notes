@@ -32,7 +32,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - injective function: each x in the domain gives a unique output in the codomain after applying the function
   - surjective function: no z in B (codomain) is left alone -> every z in B has a corresponding x in A s.t. f(x) = z
   - bijective: injective and surjective
-![relationship between domain, codomain, range)[https://en.wikipedia.org/wiki/Codomain#/media/File:Codomain2.SVG]
+![relationship between domain, codomain, range](https://en.wikipedia.org/wiki/Codomain#/media/File:Codomain2.SVG)
 
 4. Polynomials
 - polynomial in degree n: a function in the form p(x) = anx^n + an-1x^n-1 + ... + a1x + a0, where an... are constants
@@ -51,5 +51,5 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - f (x) = a^x, where a > 0
 - logarithmic is **inverse function** of exponential: logax (to base a)
 - e is Euler number, inverse of exponential function e^x is the natural logarithm lnx
--**e^lnx = x for x > 0 and lne ^ x = x for all x**
+- **e^lnx = x for x > 0 and lne ^ x = x for all x**
 - domain of e^x is R and the range is the set R+ of all positive real numbers.
