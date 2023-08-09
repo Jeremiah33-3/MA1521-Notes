@@ -33,7 +33,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - surjective function: no z in B (codomain) is left alone -> every z in B has a corresponding x in A s.t. f(x) = z
   - bijective: injective and surjective
 
-![relationship between domain, codomain, range.](https://en.wikipedia.org/wiki/Codomain#/media/File:Codomain2.SVG)
+[relations between domain, codomain, range.](https://en.wikipedia.org/wiki/Codomain#/media/File:Codomain2.SVG)
 
 4. Polynomials
 - polynomial in degree n: a function in the form p(x) = anx^n + an-1x^n-1 + ... + a1x + a0, where an... are constants
