@@ -66,4 +66,18 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - let c be the interior point in I, if left limit = right limit = L (and L in R), lim(x -> c) f(x) exists and has value L
   - [find limit from graph](https://www.youtube.com/watch?v=7Q2HwTHcxA0)
 
+10. Continuity and discontinuity
+- discontinuity: hole, jump, infinite ~
+- let f be a real-valued function (R) defined on some interval I and c is a point in I
+  - if c is an interior point in I
+  - f is continuous at c if (i) lim (x->c) f(x) exists and (ii) lim (x -> c)f(x) = f(c)
+- c is the left end-point
+  - f is continuous at x = c if (i) lim(x-> c+) f(x) exits and (ii) lim(x->c+) f(x) = f(c)
+- c is the right end-point
+  - f is continuous at x = c if (i) lim(x -> c-) f(x) exists and (ii) lim(x-> c-) f(x) = f(c)
+- continuity on an interval: f is continuous on an interval if f is continuous at x = c for all points c in I.
+- no sudden jump if continuous
+- [con and discon](https://www.youtube.com/watch?v=joewRl1CTL8)
+- [3 steps con test](https://www.youtube.com/watch?v=WT7oxiiFYt8)
 
+11. Evaluation of limits 
