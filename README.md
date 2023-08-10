@@ -54,3 +54,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - e is Euler number, inverse of exponential function e^x is the natural logarithm lnx
 - **e^lnx = x for x > 0 and lne ^ x = x for all x**
 - domain of e^x is R and the range is the set R+ of all positive real numbers.
+
+8. Domain and range in depth
+- maximal domain: domain not specified -> take domain to be as large as possible (e.g. R \ {1})
+- for some cases -> basic algebra can find the range of the function (let y = f(x) -> y = _expr_)
