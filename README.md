@@ -58,3 +58,12 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 8. Domain and range in depth
 - maximal domain: domain not specified -> take domain to be as large as possible (e.g. R \ {1})
 - for some cases -> basic algebra can find the range of the function (let y = f(x) -> y = _expr_)
+
+9. Limits
+- let f be a real-valued function (R) defined on some interval I and c is a point in I
+  - left limit: lim (x -> c-) f(x) is the value that f(x) approaches when x approaches c from the left.
+  - right limit: lim(x -> c+) f(x) is the value that f(x) approached c from the right
+  - let c be the interior point in I, if left limit = right limit = L (and L in R), lim(x -> c) f(x) exists and has value L
+  - [find limit from graph](https://www.youtube.com/watch?v=7Q2HwTHcxA0)
+
+
