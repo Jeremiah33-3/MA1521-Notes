@@ -103,3 +103,16 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   5. Combination of any of the above on the domain it is defined
 - Note: Since lim(x→c)f (x) = f (c) when f is continuous at x = c, finding the limit at x = c of any of the above functions is a matter of evaluating f at x = c.
 
+12. Limits at infinity
+- let f be dfined on R
+   - lim(x-> ∞)f(x) is the value f(x) as x approaches positive infinity .
+   - lim(x-> -∞)f(x) is the value f(x) as x tends to negative infinity.
+- graphical representations if there is finite limit as x appraoches infinity -> asymptotes (horizontal) 
+
+13. Infinite limits, replacement rule
+- indeterminate forms:
+  - a limit of the form lim(x->c)(f(x)/g(x)) where f(x) -> 0 and g(x) -> 0 as x -> c is called an indeterminate form of the type 0/0
+  - a limit of the form lim(x->c)(f(x)/g(x)) where f(x) -> ∞ and g(x) -> ∞ as x -> c is called an indeterminate form of the type ∞/∞
+- replacement rule
+  - Let I be an open interval containing the point x = c.Suppose f (x) = g(x) for all x ∈ I,except possibly at x = c, then lim(x->c)f(x) = lim(x->c)g(x)
+- theorem 12 in Thomos Calculas: all limits laws in Theorem 1 are true when we replace lim(x->c) by lim(x->∞) or lim(x->-∞); That is, the variable x may approach a finite number c or +-∞
