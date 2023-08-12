@@ -111,7 +111,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - asymptotes
   - A line y = b is a horizontal asymptote of the graph of a function y = ƒ(x) if either lim(x->∞)f(x) = b or lim(x->-∞)f(x) = b
   - A line x = a is a vertical asymptote of the graph of a function y = ƒ(x) if either lim(x->a+)f(x) = +-∞ or lim(x->a-)f(x) = +-∞
-  - If the degree of the numerator of a rational function is 1 greater than the degree of the 1denominator, the graph has an oblique or slant line 1asymptote.
+  - If the degree of the numerator of a rational function is 1 greater than the degree of the denominator, the graph has an oblique or slant line asymptote.
 - dominant terms: a term in the expr dominates when x approaches const c/+∞/-∞ when it is large 
 
 13. Infinite limits, replacement rule
