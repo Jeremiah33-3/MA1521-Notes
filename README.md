@@ -107,7 +107,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - let f be dfined on R
    - lim(x-> ∞)f(x) is the value f(x) as x approaches positive infinity .
    - lim(x-> -∞)f(x) is the value f(x) as x tends to negative infinity.
-- graphical representations if there is finite limit as x appraoches infinity -> asymptotes (horizontal) 
+- graphical representations if there is finite limit as x appraoches infinity -> asymptotes (horizontal, oblique...) 
 
 13. Infinite limits, replacement rule
 - indeterminate forms:
