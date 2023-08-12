@@ -107,7 +107,12 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - let f be dfined on R
    - lim(x-> ∞)f(x) is the value f(x) as x approaches positive infinity .
    - lim(x-> -∞)f(x) is the value f(x) as x tends to negative infinity.
-- graphical representations if there is finite limit as x appraoches infinity -> asymptotes (horizontal, oblique...) 
+- graphical representations if there is finite limit as x appraoches infinity -> asymptotes (horizontal, oblique...)
+- asymptotes
+  - A line y = b is a horizontal asymptote of the graph of a function y = ƒ(x) if either lim(x->∞)f(x) = b or lim(x->-∞)f(x) = b
+  - A line x = a is a vertical asymptote of the graph of a function y = ƒ(x) if either lim(x->a+)f(x) = +-∞ or lim(x->a-)f(x) = +-∞
+  - If the degree of the numerator of a rational function is 1 greater than the degree of the 1denominator, the graph has an oblique or slant line 1asymptote.
+- dominant terms: a term in the expr dominates when x approaches const c/+∞/-∞ when it is large 
 
 13. Infinite limits, replacement rule
 - indeterminate forms:
