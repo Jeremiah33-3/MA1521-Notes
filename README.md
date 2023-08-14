@@ -29,6 +29,7 @@ My take on MA1521 (AY23/24 Sem 1)
   - composite function: applying two functions to a value in succession, provided the first function's codomain matches the second function's domain:
 g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - inverse function f^-1: applying the two functions to a value x in succession in either order gives back value x
+    - graph of inverse functions -> symmetric about y = x line 
   - injective function: each x in the domain gives a unique output in the codomain after applying the function
   - surjective function: no z in B (codomain) is left alone -> every z in B has a corresponding x in A s.t. f(x) = z
   - bijective: injective and surjective
