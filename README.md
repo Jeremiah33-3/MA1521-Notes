@@ -122,3 +122,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - replacement rule
   - Let I be an open interval containing the point x = c.Suppose f (x) = g(x) for all x ∈ I,except possibly at x = c, then lim(x->c)f(x) = lim(x->c)g(x)
 - theorem 12 in Thomos Calculas: all limits laws in Theorem 1 are true when we replace lim(x->c) by lim(x->∞) or lim(x->-∞); That is, the variable x may approach a finite number c or +-∞
+- Note: lim(x->+-∞)(Ax^c + .../Bx^d + ...) -> which are the leading terms,
+  - 0 if c < d
+  - A/B if c = d
+  - +-∞ if c > d 
