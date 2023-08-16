@@ -125,4 +125,11 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - Note: lim(x->+-∞)(Ax^c + .../Bx^d + ...) -> which are the leading terms,
   - 0 if c < d
   - A/B if c = d
-  - +-∞ if c > d 
+  - +-∞ if c > d
+- useful results of tanx and sinx and tan(g(x)) and sin(g(x))
+
+14. Squeeze (Sandwich) Theorem
+> Suppose g(x) ≤ f (x) ≤ h(x) for all x in some open interval containing a point c, except possibly at x = c. If lim(x->c)g(x) = lim(x->c)h(x) = L, then lim(x->c)f(x) = L
+
+15. Intermediate Value Theorem (IVT)
+> If a real-valued function f is continuous on [a,b] and k is a number between f (a) and f (b),then f (c) = k for some c ∈ [a,b].
