@@ -121,6 +121,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - a limit of the form lim(x->c)(f(x)/g(x)) where f(x) -> ∞ and g(x) -> ∞ as x -> c is called an indeterminate form of the type ∞/∞
 - replacement rule
   - Let I be an open interval containing the point x = c.Suppose f (x) = g(x) for all x ∈ I,except possibly at x = c, then lim(x->c)f(x) = lim(x->c)g(x)
+  - this is useful when you encounter indeterminate forms and there exists a function g(x) to f(x) that are identical except at x =c, where f(x) is not defined but g(x) is well defined -> use the limit of g(x) at point c to find lim(x->c)f(x)
 - theorem 12 in Thomos Calculas: all limits laws in Theorem 1 are true when we replace lim(x->c) by lim(x->∞) or lim(x->-∞); That is, the variable x may approach a finite number c or +-∞
 - Note: lim(x->+-∞)(Ax^c + .../Bx^d + ...) -> which are the leading terms,
   - 0 if c < d
