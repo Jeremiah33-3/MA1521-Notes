@@ -134,3 +134,34 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 
 15. Intermediate Value Theorem (IVT)
 > If a real-valued function f is continuous on [a,b] and k is a number between f (a) and f (b),then f (c) = k for some c ∈ [a,b].
+
+## Deriavatives
+
+1. slope of a curve  y = ƒ(x) at the point P(x0, ƒ(x0)) AND deriavative of a function f at point x0
+- is the number lim(h->0)( (f(x0 + h) - f(x0)) / h)
+- provided the limit exists
+- the tangent line to the curve at P is the line through P with this slope.
+
+2. Deriavative of a function at point x
+> The derivative of the function ƒ(x) with respect to the variable x is the function ƒ′ whose value at x is lim(h->0)( (f(x + h) - f(x)) / h) provided the limit exists
+- If ƒ′ exists at a particular x, we say that ƒ is differentiable (has a derivative) at x. If ƒ′ exists at every point in the domain of ƒ, we call ƒ differentiable
+- alternative definition of derivative with z->x (let z = x + h)
+- The process of calculating a derivative is called differentiation
+- dy/dx means the deriative of y w.r.t. to x, not a ratio 
+
+3. Differentiable on an Interval; One-Sided Derivatives
+> A function y = ƒ(x) is differentiable on an open interval (finite or infinite) if it has a derivative at each point of the interval.  It is differentiable on a closed interval [a, b4] if it is differentiable on the interior (a, b) and if the limits right-hand derivative at a and left-hand derivative at a
+
+4. Differentiability Implies Continuity
+> If ƒ has a derivative at x = c, then ƒ is continuous at x = c.
+
+5. Rules of differentiation
+- Derivative of a Power: If n is a positive integer, then d/dx(x^n) = nx^(n-1 for all x where the powers xn and xn-1 are defined
+- constant multiples: If u is a differentiable function of x, and c is a constant, then d/dx(cu) = c(du/dx) 
+- sum rule: If u and y are differentiable functions of x, then their sum u + y is differentiable at every point where u and y are both differentiable. At such points, d/dx(u + v) = du/dx + dv/dx
+- constant function: if f(x) has constant value ƒ(x) = c, then df/dx = d/dx(c) = 0
+- product rule: If u and v are differentiable at x, then so is their product uv, and d/dx(uv) = v*du/dx + u*dv/dx
+- quotient rule: If u and v are differentiable at x and if v(x) ≠ 0, then the quotient u/v is differentiable at x, and d/dx(u/v) = ( v*du/dx - u*dv/dx )/v^2
+
+6. Second deriavative or higher order deriavative
+- deriavatives of deriavatives 
