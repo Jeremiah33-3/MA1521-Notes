@@ -158,7 +158,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 5. Rules of differentiation
 - Derivative of a Power: If n is a positive integer, then d/dx(x^n) = nx^(n-1 for all x where the powers xn and xn-1 are defined
 - constant multiples: If u is a differentiable function of x, and c is a constant, then d/dx(cu) = c(du/dx) 
-- sum rule: If u and y are differentiable functions of x, then their sum u + y is differentiable at every point where u and y are both differentiable. At such points, d/dx(u + v) = du/dx + dv/dx
+- sum/difference rule: If u and y are differentiable functions of x, then their sum/difference u + y/ u - y is differentiable at every point where u and y are both differentiable. At such points, d/dx(u +- v) = du/dx +- dv/dx
 - constant function: if f(x) has constant value ƒ(x) = c, then df/dx = d/dx(c) = 0
 - product rule: If u and v are differentiable at x, then so is their product uv, and d/dx(uv) = v*du/dx + u*dv/dx
 - quotient rule: If u and v are differentiable at x and if v(x) ≠ 0, then the quotient u/v is differentiable at x, and d/dx(u/v) = ( v*du/dx - u*dv/dx )/v^2
@@ -182,3 +182,16 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - Jerk is the derivative of acceleration with respect to time: j(t) = da/dt = d^3s/dt^3
 
 11. Deriavative of trigometric functions
+![Trigo identities](https://www.onlinemathlearning.com/image-files/trigonometric-identities.png)
+- [angle sum formula](https://mathworld.wolfram.com/TrigonometricAdditionFormulas.html)
+- d/dx(sin x) = cos x
+- d/dx(cos x) = -sin x
+- d/dx(tan x) = sec^2x
+- d/dx(cot x) = -cosec^2 x
+- d/dx(sec x) = sec x tan x
+- d/dx(cosec x) = -cosec x cot x
+
+12. The chain rule
+- Thoerem 2
+> If ƒ(u) is differentiable at the point u = g(x) and g(x) is differentiable at x, then the composite function (ƒ ∘ g)(x) = ƒ(g(x)) is differentiable at x, and (ƒ ∘ g)′(x) = ƒ′(g(x)) * g′(x).
+- In Leibniz’s notation, if y = ƒ(u) and u = g(x), then dy/dx = dy/du*du/dx  (where dy/du is evaluated at u = g(x) ) 
