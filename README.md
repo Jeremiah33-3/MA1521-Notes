@@ -194,4 +194,16 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 12. The chain rule
 - Thoerem 2
 > If ƒ(u) is differentiable at the point u = g(x) and g(x) is differentiable at x, then the composite function (ƒ ∘ g)(x) = ƒ(g(x)) is differentiable at x, and (ƒ ∘ g)′(x) = ƒ′(g(x)) * g′(x).
-- In Leibniz’s notation, if y = ƒ(u) and u = g(x), then dy/dx = dy/du*du/dx  (where dy/du is evaluated at u = g(x) ) 
+- In Leibniz’s notation, if y = ƒ(u) and u = g(x), then dy/dx = dy/du*du/dx  (where dy/du is evaluated at u = g(x) )
+- Inside-Outside rule
+  - e.g. f(x) = sin(x^2 + x); f'(x) = cos (x^2 + x) * (2x + 1)
+- chain rule with powers of a function
+  - d/dx (u^n) = nu^(n-1) * du/dx
+
+13. Implicit differentiation
+> y^n cases
+- How:
+  1. Differentiate both sides of the equation with respect to x, treating y as a differentiable function of x
+  2. Collect the terms with dy>dx on one side of the equation and solve for dy>dx.
+- differentiating deriavative of higher orders can think of substituting the result of dy/dx to the equation to make the **final result** consists of x and y only
+- tangent (deriavative), normal (perpendicular, orthogonal)
