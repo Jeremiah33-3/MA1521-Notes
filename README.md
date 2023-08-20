@@ -165,3 +165,20 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 
 6. Second deriavative or higher order deriavative
 - deriavatives of deriavatives 
+
+7. Deriavative as a rate of change
+- The instantaneous rate of change of ƒ with respect to x at x0 is the derivative ƒ′(x0) = lim(h->0) (f(x0+h) - f(x0))/h
+
+8. Velocity
+> Velocity (instantaneous velocity) is the derivative of position with respect to time. If a body’s position at time t is s = ƒ(t), then the body’s velocity at time t is v(t) = ds/dt = lim(change in t -> 0) (f(t+ change in t) - f(t)) / change in t
+
+9. Speed
+- speed measure the rate of progress rather than direction
+> Speed is the absolute value of velocity. Speed = |v(t)| = |ds/dt|
+
+10. Acceleration
+> Acceleration is the derivative of velocity with respect to time. If a body’s position at time t is s = ƒ(t), then the body’s acceleration at time t is
+> a(t) = dv/dt = d^2s/dt^2
+- Jerk is the derivative of acceleration with respect to time: j(t) = da/dt = d^3s/dt^3
+
+11. Deriavative of trigometric functions
