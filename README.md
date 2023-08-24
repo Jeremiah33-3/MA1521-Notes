@@ -244,3 +244,22 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - circles: (x-x0)^2 + (y - y0)^2 = r^2 (cartesian equation)
     - x = rcost + x0 and y = rsint + y0 (parametric equation) => search "How to convert from cartesian equation to parametric equation"
     - where r > 0, x0 and y0 are fixed constants and 0 <= t <= 2PI
+
+17. Special forms
+- deriavative of y = f(x)^g(x)
+  - can be found by first finding the deriavative of ln y and then solving for dy/dx
+- change of base formula
+  - loga x = lnx/lna, a > 0 and a != 1
+ 
+## Application of deriavatives
+
+1. tangents and normal
+- The tangent at the point (x0, f (x0)) on the graph of a differentiable function f has equation: y − f (x0) = m(x − x0)
+- to check if parallel to axes
+  - x axes: let dy/dx be 0
+  - y axes: look at the deriavative of the normal (since normal is orthogonal to the tangent) (minus reciprocal of tangent) 
+- normal: gradient is m = f'(x0) (minus of the reciprocal)
+- parametric equations: x = x(t) and y = y(t)
+  - the equation of the tangent at the point where t = t0 is: y − y(t0) = m(x − x(t0))
+  - the equation of the normal at the point where t = t0 is: y − y(t0) = −1/m(x − x(t0))
+  - where m = dy/dx  = dy/dt / dx/dt at t = t0 
