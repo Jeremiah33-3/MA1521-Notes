@@ -144,7 +144,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 
 2. Deriavative of a function at point x
 > The derivative of the function ƒ(x) with respect to the variable x is the function ƒ′ whose value at x is lim(h->0)( (f(x + h) - f(x)) / h) provided the limit exists
-- If ƒ′ exists at a particular x, we say that ƒ is differentiable (has a derivative) at x. If ƒ′ exists at every point in the domain of ƒ, we call ƒ differentiable
+- If ƒ′ exists at a particular x, we say that ƒ is differentiable (has a derivative) at x. If ƒ′ exists at every point in the domain of ƒ, we call ƒ differentiable
 - alternative definition of derivative with z->x (let z = x + h)
 - The process of calculating a derivative is called differentiation
 - dy/dx means the deriative of y w.r.t. to x, not a ratio 
@@ -207,3 +207,40 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   2. Collect the terms with dy>dx on one side of the equation and solve for dy>dx.
 - differentiating deriavative of higher orders can think of substituting the result of dy/dx to the equation to make the **final result** consists of x and y only
 - tangent (deriavative), normal (perpendicular, orthogonal)
+
+14. Deriatives of Inverse Functions
+- Bijectiveness
+  -  a bijective function (or one-one function) f has an inverse f−1 defined on the range of f
+  -   increasing or decreasing functions are bijective. (monotone functions) -> conclusive of injectivity
+  -   subjectivity is guranteed by the restriction of range (cover all y in the codomain) 
+  -   f is increasing on I if x2 > x1 => f(x2) > f(x1) for all x1, x2 in I
+  -   f is decreasing on I if x2 > x1 => f(x2) < f(x1) for all x1, x2 in I
+  -   examples
+    - e^x is increaseing on R (real numbers)
+    - in x is increasing on R+ (or for x > 0)
+    - if f and g are increasing on I then f+ g is increasing on I
+    - if f is increasing or decreasing ten f has an inverse function f^-1
+- Theorem 2.2
+  - Let f be bijective and differentiable on an open interval I. Then (f^-1)'(a) = 1/(f'(f^-1(a)))
+  - or = 1/f'(b)
+  - or dx/dy = 1/(dy/dx) ->  let y = y(x) be a function, suppose y has an inverse function x = x(y) then..
+ 
+15. Higher order deriavative
+- second deriavative of f, f'' or f^(2) superscript; provided that f' is differentiable: f''(x) = d/dx(('(x))
+- In general, we can define the nth order derivative of f for any positive integer n provided the derivative exists.
+- aka y'', D^2f(x)
+
+16. Parametric equation
+- a curve is defined by the parametric equation: x = f (t) and y = g(t), (t is the parameter)
+- differentiable at a point where t = t0 if both f and g are differentiable at t = t0
+- f'(t0) and g'(t0) not 0
+- dy/dt = dy/dx * dx/dt => dy/dx = dy/dt / dx/dt = g'(t) / f'(t)  **(by chain rule)**
+- second deriavative -> replace y with dy/dx => d2y/dx2 = d/dt(dy/dx) / dx/dt    =   d/dt(g'(t)/f'(t)) / f'(t)    =   (g''(t)f'(t) - g'(t)f''(t)) / f'(t)^3
+- examples of parametric curves
+  - ellipses: (x - x0)^2/a^2 + (y - y0)^2/b^2 = 1 
+    - x = acost + x0; y = bsint + y0
+  - hyperbolas: (difference: x less y)
+    - x = asect + x0; y = btant + y0 OR x = atant + x0; y = bsect + y0
+  - circles: (x-x0)^2 + (y - y0)^2 = r^2 (cartesian equation)
+    - x = rcost + x0 and y = rsint + y0 (parametric equation) => search "How to convert from cartesian equation to parametric equation"
+    - where r > 0, x0 and y0 are fixed constants and 0 <= t <= 2PI
