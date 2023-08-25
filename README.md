@@ -252,6 +252,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - loga x = lnx/lna, a > 0 and a != 1
  
 ## Application of deriavatives
+> solve optimisation problem easier 
 
 1. tangents and normal
 - The tangent at the point (x0, f (x0)) on the graph of a differentiable function f has equation: y − f (x0) = m(x − x0)
@@ -263,3 +264,23 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - the equation of the tangent at the point where t = t0 is: y − y(t0) = m(x − x(t0))
   - the equation of the normal at the point where t = t0 is: y − y(t0) = −1/m(x − x(t0))
   - where m = dy/dx  = dy/dt / dx/dt at t = t0 
+
+2. Absoulte maximum and min/ extremes/ global maxima or minima 
+> Let ƒ be a function with domain D. Then ƒ has an absolute maximum value on D at a point c if f(x) <= f(c) for all x in D. and an absolute minimum value on D at c if f(x) >= f(c) for all x in D
+
+3. Extreme value theore,
+- If ƒ is continuous on a closed interval [a, b] , then ƒ attains both an absolute maximum value M and an absolute minimum value m in [a, b] . That is, there are numbers x1 and x2 in [a, b] with ƒ(x1) = m, ƒ(x2) = M, and m <= f(x) <= M for every other x in [a, b]
+
+4. Local maximum and minimum
+> A function ƒ has a local maximum value at a point c within its domain D if ƒ(x) <= ƒ(c) for all x∊D lying in some open interval containing c.
+> A function ƒ has a local minimum value at a point c within its domain D if f(x) >= f(c) for all x∊D lying in some open interval containing c.
+
+5. The First Derivative Theorem for Local Extreme Values (THEOREM 2)
+- If ƒ has a local maximum or minimum value at an interior point c of its domain, and if ƒ′ is defined at c, then ƒ′(c) = 0.
+
+6. interior point
+> An interior point of the domain of a function ƒ where ƒ′ is zero or undefined is a critical point of ƒ.
+- to find absolute extrema of a continuous func f on a closed interval I
+  - Find all critical points of ƒ on the interval.
+  - Evaluate ƒ at all critical points and endpoints.
+  - Take the largest and smallest of these values.
