@@ -284,3 +284,17 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - Find all critical points of ƒ on the interval.
   - Evaluate ƒ at all critical points and endpoints.
   - Take the largest and smallest of these values.
+
+7. Rolle's Theorem (Theorem 3)
+> Suppose that y = ƒ(x) is continuous over the closed interval [a, b] and differentiable at every point of its interior (a, b). If ƒ(a) = ƒ(b), then there is at least one number c in (a, b) at which ƒ′(c) = 0.
+- The hypotheses of Theorem 3 are essential. If they fail at even one point, the graph may not have a horizontal tangent.
+- may be combined with the Intermediate Value Theorem to show when there is only one real solution of an equation ƒ(x) = 0
+
+8. Mean Value Theorem (Theorem 4)
+> Suppose y = ƒ(x) is continuous over a closed interval [a, b] and differentiable on the interval’s interior (a, b). Then there is at least one point c in (a, b) at which (ƒ(b) - ƒ(a)) / (b - a) = ƒ′(c)
+- physical interpretation: Mean Value Theorem says that the instantaneous change at some interior point is equal to the average change over the entire interval.
+- colloary (mathematical consequences)
+  - corollary 1: If ƒ′(x) = 0 at each point x of an open interval (a, b), then ƒ(x) = C for all x∊(a, b), where C is a constant.
+  - corollary 2: If ƒ′(x) = g′(x) at each point x in an open interval (a, b), then there exists a constant C such that ƒ(x) = g(x) + C for all x∊(a, b). That is, ƒ - g is a constant function on (a, b).
+
+9. Monotonic functions and first deriavative test 
