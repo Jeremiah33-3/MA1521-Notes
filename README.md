@@ -298,3 +298,21 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - corollary 2: If ƒ′(x) = g′(x) at each point x in an open interval (a, b), then there exists a constant C such that ƒ(x) = g(x) + C for all x∊(a, b). That is, ƒ - g is a constant function on (a, b).
 
 9. Monotonic functions and first deriavative test 
+- to show that functions with postive deriavative is increasing function and that with negative deriavative is decreasing function: a function that is increasing or decreasing on an interval is said to be monotomic on an interval
+  - collolary 3: Suppose that ƒ is continuous on [a, b] and differentiable on (a, b)
+    - If ƒ′(x) > 0 at each point x∊(a, b), then ƒ is increasing on [a, b]
+    - If ƒ′(x) < 0 at each point x∊(a, b), then ƒ is decreasing on [a, b]
+  - first deriavative test for local extrema (218)
+ 
+10. Concavity
+> a graph of a differentiable function y = ƒ(x) is
+> - concave up  on an open interval I if ƒ′ is increasing on I; (convex) 
+> - concave down on an open interval I if ƒ′ is decreasing on I.
+- second deriavative test for concavity
+  - Let y = ƒ(x) be twice-differentiable on an interval I.
+    - If ƒ″ > 0 on I, the graph of ƒ over I is concave up
+    - If ƒ″ < 0 on I, the graph of ƒ over I is concave down
+
+11. Points of inflection
+- A point (c, ƒ(c)) where the graph of a function has a tangent line and where the concavity changes is a point of inflection
+  - At a point of inflection (c, ƒ(c)), either ƒ″(c) = 0 or ƒ″(c) fails to exist.
