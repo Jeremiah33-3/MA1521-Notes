@@ -268,51 +268,69 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 2. Absoulte maximum and min/ extremes/ global maxima or minima 
 > Let ƒ be a function with domain D. Then ƒ has an absolute maximum value on D at a point c if f(x) <= f(c) for all x in D. and an absolute minimum value on D at c if f(x) >= f(c) for all x in D
 
-3. Extreme value theore,
+3. Extreme value theorem (Theorem 3.4)
 - If ƒ is continuous on a closed interval [a, b] , then ƒ attains both an absolute maximum value M and an absolute minimum value m in [a, b] . That is, there are numbers x1 and x2 in [a, b] with ƒ(x1) = m, ƒ(x2) = M, and m <= f(x) <= M for every other x in [a, b]
+- only conclude existence but do not help us find the extreme value 
 
-4. Local maximum and minimum
+4. Local maximum and minimum (Definition 3.5) 
 > A function ƒ has a local maximum value at a point c within its domain D if ƒ(x) <= ƒ(c) for all x∊D lying in some open interval containing c.
 > A function ƒ has a local minimum value at a point c within its domain D if f(x) >= f(c) for all x∊D lying in some open interval containing c.
 
-5. The First Derivative Theorem for Local Extreme Values (THEOREM 2)
-- If ƒ has a local maximum or minimum value at an interior point c of its domain, and if ƒ′ is defined at c, then ƒ′(c) = 0.
+5. Absolute extrema/global extrema (Definition 3.4)
+> A function f has an
+> - absolute maximum at x = c if f(x) <= f(c) for all x in the **domain** of f
+> - absolute minimum at x = c if f(x) >= f(c) for all x in the **domain** of f 
 
-6. interior point
+7. The First Derivative Theorem for Local Extreme Values (THEOREM 2)
+- If ƒ has a local maximum or minimum value at an interior point c of its domain, and if ƒ′ is defined at c, then ƒ′(c) = 0.
+- Theorem 3.5. If f is differentiable on an open interval containing x = c and f has a local extremum at x = c, then f;(c) = 0.
+
+7. interior point
 > An interior point of the domain of a function ƒ where ƒ′ is zero or undefined is a critical point of ƒ.
 - to find absolute extrema of a continuous func f on a closed interval I
   - Find all critical points of ƒ on the interval.
   - Evaluate ƒ at all critical points and endpoints.
   - Take the largest and smallest of these values.
+- **(Critical Point Formal definition in LN)** A number c in the domain of a function f is a critical point of f if the following 2 conditions hold
+  1. it is not an end-point
+  2. either f'(c) = 0 or f'(c) does not exist.
+- Theorem 3.6. If f has a local minimum/maximum at x = c, then c is a critical point of f. (converse may not be true)
 
-7. Rolle's Theorem (Theorem 3)
+8. Rolle's Theorem (Theorem 3)
 > Suppose that y = ƒ(x) is continuous over the closed interval [a, b] and differentiable at every point of its interior (a, b). If ƒ(a) = ƒ(b), then there is at least one number c in (a, b) at which ƒ′(c) = 0.
 - The hypotheses of Theorem 3 are essential. If they fail at even one point, the graph may not have a horizontal tangent.
 - may be combined with the Intermediate Value Theorem to show when there is only one real solution of an equation ƒ(x) = 0
 
-8. Mean Value Theorem (Theorem 4)
+9. Mean Value Theorem (Theorem 4)
 > Suppose y = ƒ(x) is continuous over a closed interval [a, b] and differentiable on the interval’s interior (a, b). Then there is at least one point c in (a, b) at which (ƒ(b) - ƒ(a)) / (b - a) = ƒ′(c)
 - physical interpretation: Mean Value Theorem says that the instantaneous change at some interior point is equal to the average change over the entire interval.
 - colloary (mathematical consequences)
   - corollary 1: If ƒ′(x) = 0 at each point x of an open interval (a, b), then ƒ(x) = C for all x∊(a, b), where C is a constant.
   - corollary 2: If ƒ′(x) = g′(x) at each point x in an open interval (a, b), then there exists a constant C such that ƒ(x) = g(x) + C for all x∊(a, b). That is, ƒ - g is a constant function on (a, b).
 
-9. Monotonic functions and first deriavative test 
+10. Monotonic functions and first deriavative test 
 - to show that functions with postive deriavative is increasing function and that with negative deriavative is decreasing function: a function that is increasing or decreasing on an interval is said to be monotomic on an interval
-  - collolary 3: Suppose that ƒ is continuous on [a, b] and differentiable on (a, b)
-    - If ƒ′(x) > 0 at each point x∊(a, b), then ƒ is increasing on [a, b]
+- increasing and dereasing functions (definition in lecture notes) 
+  - collolary 3 (Theorem 3.1): Suppose that ƒ is continuous on [a, b] and differentiable on (a, b)
+    - If ƒ′(x) > 0 at each point x∊(a, b), then ƒ is increasing on [a, b] (an interval I) 
     - If ƒ′(x) < 0 at each point x∊(a, b), then ƒ is decreasing on [a, b]
   - first deriavative test for local extrema (218)
+  - second deriavative test for local extrema (225) 
  
-10. Concavity
+11. Concavity
 > a graph of a differentiable function y = ƒ(x) is
 > - concave up  on an open interval I if ƒ′ is increasing on I; (convex) 
 > - concave down on an open interval I if ƒ′ is decreasing on I.
+> - The graph of f is concave upward (downward) on (a,b) if it is concave upward (downward) at every point in (a,b).
 - second deriavative test for concavity
-  - Let y = ƒ(x) be twice-differentiable on an interval I.
+  - Let y = ƒ(x) be twice-differentiable on an interval I. (Theorem 3.2) 
     - If ƒ″ > 0 on I, the graph of ƒ over I is concave up
     - If ƒ″ < 0 on I, the graph of ƒ over I is concave down
 
-11. Points of inflection
+12. Points of inflection (Definition 3.3)
 - A point (c, ƒ(c)) where the graph of a function has a tangent line and where the concavity changes is a point of inflection
   - At a point of inflection (c, ƒ(c)), either ƒ″(c) = 0 or ƒ″(c) fails to exist.
+  - ^ (Theorem 3.3) . Let f be differentiable on (a,b). Let c ∈ (a,b). If (c, f (c)) is a point of inflection of the graph of f and f''(c) exists, then f''(c) = 0
+
+13. Related rates
+- let y = f(x) and let x and y be functions of a third var t that represents, e.g, time. By the chain rule, dy/dt = dy/dx*dx/dt
