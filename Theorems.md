@@ -31,3 +31,17 @@
 12. Theorem 12:
     - All the Limit Laws in Theorem 1 are true when we replace lim(x->c) by lim(x->∞) or lim(x->-∞).
     - That is, the variable x may approach a finite number c or +-∞.
+
+## Others helpful theorems and formulas 
+
+1. Trigonometric identities
+
+![trigo](https://www.onlinemathlearning.com/image-files/trigonometric-identities.png)
+
+2. Sine rule
+
+info: https://www.mathsisfun.com/algebra/trig-sine-law.html
+
+3. Cosine rule
+
+info: https://www.youtube.com/watch?v=9CGY0s-uCUE&pp=ygULY29zaW5lIHJ1bGU%3D
