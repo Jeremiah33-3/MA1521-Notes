@@ -275,11 +275,23 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 4. Local maximum and minimum (Definition 3.5) 
 > A function ƒ has a local maximum value at a point c within its domain D if ƒ(x) <= ƒ(c) for all x∊D lying in some open interval containing c.
 > A function ƒ has a local minimum value at a point c within its domain D if f(x) >= f(c) for all x∊D lying in some open interval containing c.
+- Theorem 3.8. (First Derivative Test for Local Extrema) Let f be differentiable on an open interval containing a critical point c except possibly at c and f is continuous at c.
+  - (1) If f' changes from positive to negative at x = c, then f has a local maximum at c.
+  - (2) If f' changes from negative to positive at x = c, then f has a local minimum at c
+  - (3) If f' does not change sign at x = c, then f has no local extremum at c
+- Theorem 3.9. (Second Derivative Test) Let f be a twice differentiable function defined in an open interval containing c.
+  - (1) If f'(c) = 0 (horizontal tangent line) and f''(c) < 0 (concavity), then f has a local maximum at c.
+  - (2) If f'(c) = 0 and f''(c) > 0, then f has a local minimum at c.
+  - (3) No conclusion can be drawn if f''(c) = 0. (first deriavative test)
+  - NOTE: The functions x^4, −x^4, x^3, has a local min, max, neither a max nor a min at x = 0, respectively, but have 0 second derivative at x = 0
 
 5. Absolute extrema/global extrema (Definition 3.4)
 > A function f has an
 > - absolute maximum at x = c if f(x) <= f(c) for all x in the **domain** of f
-> - absolute minimum at x = c if f(x) >= f(c) for all x in the **domain** of f 
+> - absolute minimum at x = c if f(x) >= f(c) for all x in the **domain** of f
+- Theorem 3.7. (First Derivative Test for Absolute Extrema) Let f be differentiable on an open interval containing a critical point c except possibly at c and f is continuous at c.
+  - (1) If f'(x) > 0 **for all** x < c and f'(x) < 0 for all x > c, then f has an absolute maximum at c.
+  - (2) If f'(x) < 0 for all x < c and f'(x) > 0 for all x > c, then f has an absolute minimum at c.
 
 7. The First Derivative Theorem for Local Extreme Values (THEOREM 2)
 - If ƒ has a local maximum or minimum value at an interior point c of its domain, and if ƒ′ is defined at c, then ƒ′(c) = 0.
@@ -296,7 +308,7 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   2. either f'(c) = 0 or f'(c) does not exist.
 - Theorem 3.6. If f has a local minimum/maximum at x = c, then c is a critical point of f. (converse may not be true)
 
-8. Rolle's Theorem (Theorem 3)
+8. Rolle's Theorem (Theorem 3/ Theorem 3.11)
 > Suppose that y = ƒ(x) is continuous over the closed interval [a, b] and differentiable at every point of its interior (a, b). If ƒ(a) = ƒ(b), then there is at least one number c in (a, b) at which ƒ′(c) = 0.
 - The hypotheses of Theorem 3 are essential. If they fail at even one point, the graph may not have a horizontal tangent.
 - may be combined with the Intermediate Value Theorem to show when there is only one real solution of an equation ƒ(x) = 0
@@ -307,6 +319,8 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - colloary (mathematical consequences)
   - corollary 1: If ƒ′(x) = 0 at each point x of an open interval (a, b), then ƒ(x) = C for all x∊(a, b), where C is a constant.
   - corollary 2: If ƒ′(x) = g′(x) at each point x in an open interval (a, b), then there exists a constant C such that ƒ(x) = g(x) + C for all x∊(a, b). That is, ƒ - g is a constant function on (a, b).
+- give us basis to use deriavative to find extrema
+- consequence (collolary): Theorem 3.13. Let f be continuous on [a,b] and differentiable on (a,b). If f'(x) > 0(< 0) for all x ∈ (a,b), then f is increasing (decreasing) on [a,b]. (monotonocity)
 
 10. Monotonic functions and first deriavative test 
 - to show that functions with postive deriavative is increasing function and that with negative deriavative is decreasing function: a function that is increasing or decreasing on an interval is said to be monotomic on an interval
@@ -334,3 +348,27 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 
 13. Related rates
 - let y = f(x) and let x and y be functions of a third var t that represents, e.g, time. By the chain rule, dy/dt = dy/dx*dx/dt
+
+14. Maximum and Minimum Problem (Optimisation)
+1) what is the var we want to maximise
+2) find critical points (in the domain) 
+3) derivative test
+4) conclude extrema
+
+15. L'Hopital Rule
+- Theorem 3.10. Let f and g be differentiable at all points in some open interval containing x = c (except possibly at c). If lim(x→c)f (x) = 0 = lim(x→c)g(x) or lim(x→c)f (x) = ∞ = lim(x→c)g(x), then
+  - lim(x->c)f(x)/g(x) = lim(x->c)f'(x)/g'(x)
+  - provided the limit on the right exists or equals ∞ or −∞.
+  - The result also holds
+    - (1) for limits at infinity, i.e. c = ±∞.
+    - (2) for one-sided limits.
+- three indeterminate forms: 0^0, infitity^0m 1^infinity
+
+## Integrals 
+
+1. Antideriatves
+> Definition 4.1. F is an antiderivative of f on an interval I if F'(x) = f (x) for all x in I.
+- Theorem 4.1. (1) If F is an antiderivative of f on an interval I, then so is F + C for any constant C. Furthermore, any antiderivative of f on I is of the form F + C for some constant C. This can be expressed as
+  - Int(f(x) dx) = F(x) + C
+  - indefinite integral. (no range)
+  - (2) Let α and β be any constants. Then int(αf (x) + βg(x)dx ) = αint(f (x)dx) + βint(g(x)dx)
