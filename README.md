@@ -372,3 +372,8 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
   - Int(f(x) dx) = F(x) + C
   - indefinite integral. (no range)
   - (2) Let α and β be any constants. Then int(αf (x) + βg(x)dx ) = αint(f (x)dx) + βint(g(x)dx)
+
+2. Integration by substitution:
+- Theorem 4.2. Let u = g(x) be a differentiable function whose range is some interval I and let f be continuous on I. Then, int(f(g(x))g'(x)dx) = int(f(u)du)
+  - since u = g(x), we ave du/dx = g'(x). We may write du = g'(x)dx and then substitute f(g(x))g'(x)dx by f(u) du
+  - theorem 4.3 -> right hand side also equal left hand side 
