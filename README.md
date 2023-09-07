@@ -377,3 +377,48 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 - Theorem 4.2. Let u = g(x) be a differentiable function whose range is some interval I and let f be continuous on I. Then, int(f(g(x))g'(x)dx) = int(f(u)du)
   - since u = g(x), we ave du/dx = g'(x). We may write du = g'(x)dx and then substitute f(g(x))g'(x)dx by f(u) du
   - theorem 4.3 -> right hand side also equal left hand side 
+
+3. Useful trignometrics identities for integration
+- sec^2 x − 1 = tan^2 x
+- csc^2 x − 1 = cot^2 x
+- sinAcosA =1/2sin 2A
+- cos^2 A =1/2(1 + cos 2A)
+- sin^2 A =1/2(1 − cos 2A)
+- sinAcosB =1/2(sin(A + B) + sin(A − B))
+- cosAsinB =1/2(sin(A + B) − sin(A − B))
+- cosAcosB =1/2(cos(A + B) + cos(A − B))
+- sinAsinB = −1/2(cos(A + B) − cos(A − B))
+
+4. Partial fractions (pg 71)
+
+5. Integration by parts (pg 74)
+- basic rule to determine which to differentate: LIATE (Log, Inverse trigo, Algebraic, Trigo, Exponential) 
+
+6. Riemann Sums and Definite Integrals
+- divide the graph of f from x = a to b into n rectangles/ n equal distances (what happens when n approaches infinitiy? -> striaght lines, more dense, fill up entire area of the region; approximation better)
+- without loss of generality -> area of a triangle = ( (b-a) / n) * f(a + k((b-a) / n) )
+- grometrically: definite integral gives the area of the region uder the graph of f from x = a to x = b
+  - int b/a (f(x) dx)
+  - f must be continuous on [a,b]
+- limit exists and is known as the definite integral of f from x = a to x = b
+  - > lim (n -> ∞) { sum (n  k = 1)( (b-a) / n) * f(a + k((b-a) / n) )}
+  - known as the Riemann sum of f -> sum (n k = 1)...
+- for sufficiently large n,
+  - int b a (f(x) dx) ≈ riemann sum
+  - int is the limit of the riemann sum
+ 
+7. Fundamental Theorem of Calculus (FTC) (79-80)
+  - riemann sum works but tedious
+  - First ~: Theorem 4.4 (FTC 1). Let f be continuous on [a,b] and let F be an anti-derivative of f .Then,
+    - int b a (f(x) dx) = F(b) - F(a)
+    - that is,
+    - int b a(F'(x) fx) = F(b) - F(a)
+    - often denoted by [F(x)]b a = F(b) - F(a)
+    - FTC 1 follows from Theorem 4.5 (FTC 2)
+  - Second ~: Theorem 4.5 (FTC 2). Let f be continuous on [a,b]. The function g defined by g(x) = intx a (f(t) dt), a <= x <= b is continuous and differentiable on (a,b), and g'(x) = f(x). That is
+    - d/dx (int x a (f(t) dt) ) = f(x)
+    - essentially says that the area function int x a (f(t) dt) is an anti-deriavative of f
+  - useful remark: If g(x) is differentiable, then using the Chain Rule, one has d/dx( int g(x) a (f (t)dt) ) = f (g(x))g'(x).
+ 
+8. Properties of fefinite integrals
+  - pg 83
