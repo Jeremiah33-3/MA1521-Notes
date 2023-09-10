@@ -45,3 +45,7 @@ info: https://www.mathsisfun.com/algebra/trig-sine-law.html
 3. Cosine rule
 
 info: https://www.youtube.com/watch?v=9CGY0s-uCUE&pp=ygULY29zaW5lIHJ1bGU%3D
+
+4. sum of angles properties
+
+![sin (a+b) all these](https://i.pinimg.com/originals/0f/0b/52/0f0b52735d040a376085b1cf361dd166.jpg)
