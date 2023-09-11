@@ -420,5 +420,47 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
     - essentially says that the area function int x a (f(t) dt) is an anti-deriavative of f
   - useful remark: If g(x) is differentiable, then using the Chain Rule, one has d/dx( int g(x) a (f (t)dt) ) = f (g(x))g'(x).
  
-8. Properties of fefinite integrals
+8. Properties of definite integrals
   - pg 83
+
+9. Improper integral
+> Integrals with infinite limits of integration are improper integrals of Type I
+  1. f (x) is continuous on [a,∞): b is infinity --> lim (b ->∞ ) int b a (f(x) dx) 
+  2. f (x) is continuous on (−∞,b]: a is -infinity -->  lim (a ->-∞ ) int b a (f(x) dx)
+  3. f (x) is continuous on (−∞,∞): break into 2 parts to resemble step 1 and 2 (value c most of the cases are 0) --> equal parts; where c is any real number
+- In each case, if the limit is finite, we say that the improper integral converges and that the limit is the value of the improper integral. If the limit fails to exist, then we say that the improper integral diverges.
+
+> Integrals of functions that become infinite at a point within the interval of integration are improper integrals of Type II.
+  1. f (x) is continuous on (a,b] and is discontinuous at a: replace a with c, then take limit of c, let it approach a from the right (c -> a+) 
+  2. f (x) is continuous on [a,b) and is discontinuous at b: replace b with c, take limit of c, let it approach b from the left (c -> b-) 
+  3. f (x) is discontinuous at c with a < c < b: break into two parts, and solve by parts using 1. and 2.
+- In each case, if the limit is finite, we say that the improper integral converges and that the limit is the value of the improper integral. If the limit fails to exist, the improper integral diverges.
+
+## application of integration
+
+1. Area between curves
+- theorem 5.1: Let f and g be continuous on [a,b] with f (x) ≥ g(x) for all a ≤ x ≤ b. The area of the region bounded by the curves y = f (x),y = g(x), and the lines x = a and x = b is given by A = int b a( (f(x) - g(x))dx )
+- Theorem 5.2. Let f be continuous on [a,b] with f (x) ≥ 0 for all a ≤ x ≤ b. The area of the region bounded by the curve y = f (x), the x-axis y = 0, and the lines x = a and x = b is given by A = int b a( f(x) dx )
+  - when g(x) is 0, special case of the previous formula
+- Theorem 5.3. Let f and g be continuous on [a,b] (not necessarily with f (x) ≥ g(x) for all a ≤ x ≤ b). The area of the region bounded by the curves y = f (x),y = g(x), and the lines x = a and x = b is given by A = int b a ( |f(x) - g(x)| dx)
+  - more general case
+  - To evaluate the above integral, we split it into two or more integrals, each corresponding to the region where either f (x) − g(x) ≥ 0 or f (x) − g(x) ≤ 0.
+- Theorem 5.4. Let f be continuous on [a,b]. The area of the region bounded by the curve y = f (x), and the lines x = a and x = b is given by A = int b a( |f(x)| dx)
+  - g(x) = 0 special case, the x-axis
+  - To evaluate the above integral, we split it into two or more integrals, each corresponding to the region where either f (x) ≥ 0 or f (x) ≤ 0
+> can draw a graph to visualise the graph
+  -  Theorem 5.5. Let f and g be continuous on [c, d] with f (y) ≥ g(y) for all c ≤ y ≤ d. The area of the region bounded by the curves x = f (y), x = g(y), and the lines y = c and y = d is given by A = int d c( (f(y) - g(y)) dy)
+    -  when it is easier for us to write the curves in terms of y (write x in terms of y))
+  - Theorem 5.6. Let f and g be continuous on [c, d] (not necessarily with f (y) ≥ g(y) for all c ≤ y ≤ d). The area of the region bounded by the curves x = f (y), x = g(y), and the lines y = c and y = d is given by A = int d c ( (|f(y) - g(y)|) dy)
+    - general case when f(y) ≥ g(y) does not hold
+    - To evaluate the above integral, we split it into two or more integrals, each corresponding to the region where either f (y) − g(y) ≥ 0 or f (y) − g(y) ≤ 0.
+
+2. Volumn of Solid of Revolution by Disk (against x or y axis)
+  - Theorem 5.7. When the plane region bounded by the curve y = f (x) and the lines x = a and x = b is revolved completely about the x-axis, the volume of the solid formed is V = pi * int b a ( f(x)^2 dx)
+    - disk method
+  - Theorem 5.8. Let f and g be continuous on [a,b] with f (x) ≥ g(x) ≥ 0 for all a ≤ x ≤ b. When the region bounded by the curves y = f (x) and y = g(x) for a ≤ x ≤ b is revolved completely about the x-axis, the volume of the solid formed is V = pi * int b a ( f(x)^2 dx) - pi * int b a( g(x)^2 dx)
+  - Theorem 5.9. Let f be continuous on [c, d]. When the plane region bounded by the curve x = f (y) and the lines y = c and y = d is revolved completely about the y-axis, the volume of the solid formed is V = pi * int d c( f(y) ^2 dy)
+  - Theorem 5.10. Let f and g be continuous on [c, d] with f (y) ≥ g(y) ≥ 0 for all c ≤ y ≤ d. When the region bounded by the curves x = f (y) and x = g(y) for c ≤ y ≤ d is revolved completely about the y-axis, the volume of the solid formed is V = pi * int d c( f(y) ^2 dy) - pi * int d c( g(y)^2 dy)
+
+3. Cylindrical shell method
+  - When the plane region bounded by the curve y = f (x) and the lines x = a and x = b, where 0 ≤ a < b, is revolved completely about the y-axis, the volume of the solid formed is V = 2pi * int b a (x|f(x) dx) 
