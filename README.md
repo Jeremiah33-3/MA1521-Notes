@@ -464,3 +464,58 @@ g ◦f : A → C given by g ◦ f (x) = g(f (x)).
 
 3. Cylindrical shell method
   - When the plane region bounded by the curve y = f (x) and the lines x = a and x = b, where 0 ≤ a < b, is revolved completely about the y-axis, the volume of the solid formed is V = 2pi * int b a (x|f(x) dx) 
+
+4. Arc length of a curve
+- Let f be continuous on [a,b]. Using Riemann sums, we can prove:
+  - The length of the curve y = f (x),a ≤ x ≤ b is int b a ( sqrt(1 + f'(x)^2) dx ) --> horizontal curve
+  - The length of the curve x = g(y), p ≤ y ≤ q is int b a( sqrt(1 + g'(y)^2) dy ) --> vertical curve
+  - must note cases where y' is not well-defined at the interval 
+- [math resource one](https://math.libretexts.org/Bookshelves/Calculus/Calculus_(OpenStax)/06%3A_Applications_of_Integration/6.04%3A_Arc_Length_of_a_Curve_and_Surface_Area)
+- [khan](https://www.youtube.com/watch?v=DNDAwWIL5FY)
+
+## Sequences and series
+
+**positive integers** vs real-valued function
+1. Sequences
+- > Definition 6.1. An infinite sequence of numbers is a function whose domain is the set of positive integers. (then an is the value of the function eval at n)
+  > An infinite sequence of numbers is an infinite ordered list of numbers. a1, a2,...,an...
+- usually denote a sequence by {an}∞/n = 1 or simply {an} when the reference to n is clear
+- AP --> {a + (n-1)d}∞/n =1 and GP --> {ar^(n-1)}∞/n=1
+- we want to find out what happens to an if n approaches infinity --> limit of a sequence
+  - Let {an}∞/n=1 be a sequence of real numbers. Then lim(n→∞)an is the value an approaches as n tends to positive infinity.
+  - If lim(n→∞)an exists as a real (finite) number L, then we say that the sequence {an} converges (or more detailedly, {an} converges to L). Sometimes we simply write an → L.
+  - We say that the sequence {an} diverges if lim(n→∞)an does not exist as a real (finite) number.
+    - either limit tends to infinity/ does not converge to any real numver e.g. {(-1)^n}
+
+2. Finding the limit of a sequence
+- Theorem 6.1. Let f (x) be a function, and {an} be a sequence such that f (n) = an for all n. If lim(x→∞)f (x) = L, then lim(n→∞)an = L.
+
+3. Limit Laws for Sequences
+- If {an} and {bn} are convergent sequences and c is a constant, then we have
+  - lim(n→∞)c*an = c lim(n→∞)an.
+  - lim(n→∞)(an ± bn) = lim(n→∞)an ± lim(n→∞)bn.
+  - lim(n→∞)an*bn = lim(n→∞)an · lim(n→∞)bn.
+  - lim(n→∞)an / bn=lim(n→∞)an / lim(n→∞)bn, if lim(n→∞)bn != 0.
+- Theorem 6.2. (Squeeze Theorem for Sequence) If an ≤ bn ≤ cn for all n and lim(n→∞)an = lim(n→∞)cn = L, then lim(n→∞)bn = L.
+
+4. Series
+- An expression of the form sum ∞/n=1 an = a1 + a2 + a3 + a4 + ··· --> infite series or simply a series
+- to compute the value (called sum) of this infinite series, we construct a new sequence [Sn] defined by Sn = sum n / i = 1 ai = a1 + a2 + ··· + an
+  - [Sn] is called the sequence of partial sums of the given series
+  - then the sum of the infinite series is defined as the limit of the sequence [Sn]
+  - sum ∞ / n = 1 an = lim(n->∞)Sn
+- we say that the series sum ∞ / n = 1 an converges if the sequence {Sn} converges (which means that lim(n→∞)Sn exists as a real number) --> thus the series is convergent means that it has a finite sum
+- the series diverges if the partial sum diverges, is divergent means it does not have a finite sum (infinity/does not exist as a real number)
+- GP --> sum ∞ / n =1 ar^(n-1) = a(r^n - 1)/r - 1
+  - convergent when |r| < 1, and diverent if |r| >= 1
+- can use differences of sum (learnt in JC)
+ 
+Theorems:
+- Theorem 6.3. If sum∞ / n=1 an and sum∞ / n=1 bn are convergent series, so are the series sum∞ / n=1 c*an (where c is a constant) and sum∞ /n=1 (an + bn). Moreover,
+  1. sum∞ / n=1 c*an = c * sum∞ / n=1 an
+  2. sum∞ / n=1 (an + bn) = sum∞ / n=1 an + sum∞ / n=1 bn
+- Lemma 6.4. If the series sum∞ / n=1 an is convergent, then lim(n→∞)an = 0.
+- Theorem 6.5. (The nth Term Test for Divergence):If lim(n→∞)an does not exist or if lim(n→∞)an , 0, then the series sum∞ / n=1 an is divergent.
+  - note: ❗the nth term test is inconclusive if lim (n→∞)an = 0
+- Theorem 6.6. A series sum∞ / n=1 an of nonnegative terms converges if and only if its partial sums are bounded from above (i.e., there exists a constant K such that Sn < K for all n.)
+  - Basically, this theorem means that if each an ≥ 0, then the sum of the series sum∞ / n=1 an is either a finite number or ∞
