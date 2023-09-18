@@ -515,7 +515,51 @@ Theorems:
   1. sum∞ / n=1 c*an = c * sum∞ / n=1 an
   2. sum∞ / n=1 (an + bn) = sum∞ / n=1 an + sum∞ / n=1 bn
 - Lemma 6.4. If the series sum∞ / n=1 an is convergent, then lim(n→∞)an = 0.
-- Theorem 6.5. (The nth Term Test for Divergence):If lim(n→∞)an does not exist or if lim(n→∞)an , 0, then the series sum∞ / n=1 an is divergent.
+- Theorem 6.5. (The nth Term Test for Divergence):If lim(n→∞)an does not exist or if lim(n→∞)an != 0, then the series sum∞ / n=1 an is divergent.
   - note: ❗the nth term test is inconclusive if lim (n→∞)an = 0
 - Theorem 6.6. A series sum∞ / n=1 an of nonnegative terms converges if and only if its partial sums are bounded from above (i.e., there exists a constant K such that Sn < K for all n.)
   - Basically, this theorem means that if each an ≥ 0, then the sum of the series sum∞ / n=1 an is either a finite number or ∞
+
+5. Integral test
+- a trick: see harmonic series (pg 113 in pdf)
+- Theorem 6.7. (Integral Test) Let {an} be a sequence of positive terms. Suppose that an = f (n), where f is a continuous, positive, decreasing function of x for all x ≥ 1.
+  - Then the series sum∞ / n=1 (an) is convergent if and only if the improper integral int ∞ 1(f (x)dx) is convergent.
+  - (i) if int ∞ 1 (f(x) dx) is convergent, then sum ∞ / n = 1 (an) is convergent
+  - (ii) if int ∞ 1 (f(x) dx) is divergent, then sum ∞ / n = 1 (an) is divergent
+  - note: the result of the convergent integral (if exist) is not the sum of the series (is bigger)
+- Theorem 6.8. (The p-series) The p-series sum ∞ / n=1 (1 / n^p) is convergent if and only if p > 1.
+
+6. The comparison test
+- Theorem 6.9. (Comparison Test): Suppose sum ∞ / n=1 an and sum ∞ / n=1 bn are series with nonnegative terms such that 0 ≤ an ≤ bn for all n.
+  - (i) sum ∞ / n=1 bn is convergent, then sum ∞ / n=1 an is convergent
+  - (ii) sum ∞ / n=1 an is divergent, then sum ∞ / n=1 bn is divergent
+  - (i) means the bigger series has a finite sum, then the smaller series also has a finite sum
+  - (ii) means that if the sum of the smaller series is ∞, then the sum of the bigger series is also ∞.
+  - When applying the Comparison Test, we often compare a given series with an appropriate p-series or geometric series.
+ 
+7. The ratio test and root test
+- Theorem 6.10. (The Ratio Test) Suppose sum ∞ / n=1 an is a series such that lim(n→∞) (|an+1 / an|) = L (L is a finite number or ∞).
+  - (i) if 0 <= L <= 1, then sum ∞ / n=1 an is absolutely convergent. That is, sum ∞ / n=1 |an| is convergent
+  - (ii) if L > 1, then sum ∞ / n=1 an is divergent
+  - (iii) if L = 1, then the ratio test is inconclusive
+  - section 6.13 is proof
+- Theorem 6.11. (The Root Test) Suppose sum ∞ / n=1 (an) is a series such that lim (n->∞) (sqn(|an|)) = L (L is a finite number or ∞)
+  - (i) if 0 <= L < 1, then sum ∞ / n=1 an is absollutely convergent
+  - (ii) if L > 1, then sum ∞ / n=1 an is divergent
+  - (iii) if L = 1, root test is inconclusive
+ 
+8. Alternating series
+- An alternating series is a series whose terms are alternatively positive and negative (e.g. alternating harmonic series
+- group them together form a new formula then can use comparison test to test for convergence
+- Theorem 6.12. (The Alternating Series Test) If bn is a sequence of positive numbers such that (i) bn is decreasing (that is, bn ≥ bn+1 for all n), and (ii) lim(n→∞) bn = 0, then the alterating series sum ∞ / n=1 bn = b1 - b2 + b3 -b4 +.... is convergent
+- but can use ratio and root test to check certain expression too
+- can check for decreasing by taking different between n and n + 1 term
+- then check for condition of lim
+- but note that the sequence of positive numbers condition must be fulfilled too
+- related expression --> see if the terms are related by a constant (c * an) then by theorem 6.3, convergence can be proven 
+
+9. absolute convergence (stroner condition than convergence)
+- Theorem 6.13. If sum ∞ / n=1 |an| is convergent, then sum ∞ / n=1 an is convergent.
+- > Definition 6.2. A series sum ∞ / n=1 an is said to be absolutely convergent if sum ∞ / n=1 |an| is convergent.
+  > The series sum ∞ / n=1 an is said to be conditionally convergent if it is convergent but not absolutely convergent.
+- theorem 6.13 states that every absolutely convergent series is convergent 
