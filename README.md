@@ -563,3 +563,32 @@ Theorems:
 - > Definition 6.2. A series sum ∞ / n=1 an is said to be absolutely convergent if sum ∞ / n=1 |an| is convergent.
   > The series sum ∞ / n=1 an is said to be conditionally convergent if it is convergent but not absolutely convergent.
 - theorem 6.13 states that every absolutely convergent series is convergent 
+
+10. Power series
+> is in the form c0 + c1x + c2x^2 +... (power series about x = 0)
+> power series about x = a: sum ∞ / n=0 cn (x - a)^n
+- Theorem 6.14. (The convergence theorem for power series and collolary -- page 633 of tb) For a given power series sum ∞ / n=0 cn(x − a)^n, exactly one of the following possibilities holds:
+  - (i) The series converges at x = a only.
+  - (ii) The series converges for all x
+  - (iii) There is a positive number R such that the series converges absolutely if |x − a| < R and diverges if |x − a| > R
+    - number R is called the radius of convergence of the power series
+    - interval of convreence of a power series is the interval consisting of all values of x for which the series converges: (a - R, a + R), \[a - R, a + R), (a - R, a + R], \[a - R, a + R]
+    - by convention R = 0 for (i) and R = ∞ for (ii)
+- Theorem 6.15. Consider the power series sum ∞ / n=0 cn(x − a)^n, where cn != 0 for all n. If lim(n→∞) |cn+1 / cn| = L or lim(n→∞) nrt (|cn|) = L, where L is a real number or ∞, then R = 1 / L
+  - By convention, if L = 0, then R = ∞, and if L = ∞, then R = 0
+  - need to pin down the center of the power series (what is a)
+
+11. Power Series Representation
+> sum ∞ / n=0 x^n is called the power series representation of the function 1/(1-x) about x = 0
+- to find the power series representation of some function f(x) (about some centre)
+- if centre is not 0, the representation will have (x -a)  term ish 
+-  Theorem 6.16. If the power series sum ∞ / n=0 cn(x − a)^n has radius of convergence R > 0, then the function f defined by f(x) = sum ∞ / n=0 cn(x − a)^n
+  - f(x) is differentiable on the interval |x - a| < R and
+    - (i) f'(x)  sum ∞ / n=1 ncn(x − a)^n−1, for |x − a| < R. (term by term differentiation)
+    - int (f(x) dx) = sum ∞ / n=0 (cn * ( (x − a)^n+1/ (n + 1) )) + C, for |x − a| < R. (term by term integration)
+   
+12. Taylor and Macalurin Series
+- Theorem 6.17. If f has a power series representation at x = a, that is f (x) =sum ∞ / n=0 cn(x − a)^n, |x − a| < R, for some R > 0, then its coefficients are given by the formula cn = f^(n)(a) / n!  --> reading nth order deriavative of f
+  - If f has a power series representation at x = a, then it is unique and has the form f (x) = sum ∞ / n=0 (f(n(a) / n!) * (x − a) ^n
+  - this is called the Taylor series of f at x = a
+  - The Maclaurin series of f is the special case of Taylor series when a = 0: f (x) = sum ∞ / n=0 (f(n)(0) / n!) * x^n
