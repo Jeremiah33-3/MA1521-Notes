@@ -32,6 +32,33 @@
     - All the Limit Laws in Theorem 1 are true when we replace lim(x->c) by lim(x->∞) or lim(x->-∞).
     - That is, the variable x may approach a finite number c or +-∞.
 
+## Vectors and geometry space (chap 12)
+
+1. T7.1: (distance formula) The distance |P1P2| between points P1(x1, y1, z1) and P2(x2,y2,z2) is |P1P2| = sqrt( (x2 - x1)^2 + (y2 - y1)^2 + (z2- z1)^2 )
+2. T7.2: (consquently from 7.1; equation of sphere) An equation of a sphere with center C(h,k,l) and radius r is (x − h)^2 + (y − k)^2 + (z − l)^2 = r^2
+3. D7.1: (Adding Vectors - the triangle law) Let u and v be two vectors. Then their sum u+v is the vector from the initial point of u to the terminal point of v when we position the vectors so that the initial point of v coincide with the terminal point of u
+4. D7.2 (Scalar multiplication) Let c ∈ R and u be a vector. The scalar multiple cu is the vector whose length is |c| times the length of u and whose direction is the same as u if c > 0 and is opposite to u if c < 0. If c = 0 or u = 0, then cu = 0.
+5. T7.3: Given the points A(x1,y1, z1) and B(x2,y2, z2), the vector **a** representing ->AB is a = <x2 − x1,y2 − y1, z2 − z1>
+6. T7.4: (Properties of Vectors) Suppose a, b and c are vectors, and c, d ∈ R are scalars. Then
+   - (1) a + b = b + a
+   - (2) a + (b + c) = (a + b) + c
+   - (3) a + 0 = a
+   - (4) a + (-a) = 0
+   - (5) c(a + b) = ca + cb
+   - (6) (c + d)a = ca + da
+   - (7) (cd)a = c(da)
+   - (8) 1a = a
+7. T7.5: If **a** != 0,  then a unit vector in the same direction as **a** is given by **u** = **a**/||**a**||
+8. T7.6: (Properties of dot product) For vectors **a**, **b** and **c** and any scalar d,
+   - (i) a · b = b · a (commutativity)
+   - (ii) a · (b + c) = a · b + a · c (distributive law)
+   - (iii) (da) · b = d(a · b) = a · (db)
+   - (iv) 0 · a = 0 (length)
+   - (v) a · a = ||a||^2
+9. T7.7: Let θ be the angle between nonzero vectors a and b. Then a · b = ||a|| ||b||cosθ --> derived from law of cosine
+10. T7.8: Two vectors a and b are orthogonal if and only if a · b = 0
+11. (Distance from a point to a plane) The (shortest) distance from a point P (x0,y0, z0) to the plane ax + by + cz = d is given by |ax0 + by0 + cz0 − d| / √a^2 + b&2 + c^2
+
 ## Others helpful theorems and formulas 
 
 1. Trigonometric identities
