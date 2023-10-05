@@ -57,7 +57,19 @@
    - (v) a · a = ||a||^2
 9. T7.7: Let θ be the angle between nonzero vectors a and b. Then a · b = ||a|| ||b||cosθ --> derived from law of cosine
 10. T7.8: Two vectors a and b are orthogonal if and only if a · b = 0
-11. (Distance from a point to a plane) The (shortest) distance from a point P (x0,y0, z0) to the plane ax + by + cz = d is given by |ax0 + by0 + cz0 − d| / √a^2 + b&2 + c^2
+11. (Distance from a point to a plane) The (shortest) distance from a point P (x0,y0, z0) to the plane ax + by + cz = d is given by |ax0 + by0 + cz0 − d| / √a^2 + b^2 + c^2
+12. T7.10: The  vector a × b is orthogonal to both a and b.
+13. T7.11: If θ is the angle between a and b, then ||a × b|| = ||a|| ||b|| sinθ
+   - cross product can be used to (1) calculate area of parallelogram (2) find the distance from a point to a line in R3
+   - a × b != b × a
+14. T7.12: If a, b and c are vectors and d is a scalar, then
+   - a × b = −b × a
+   - (da) × b = d(a × b) = a × (db)
+   - a × (b + c) = a × b + a × c
+   - (a + b) × c = a × c + b × c
+15. T7.13: (Parametric Equation of Line) vector format； r = r0 + tv; <x,y, z> = <x0,y0, z0> + t<a,b, c> --> x = x0 + at, y = y0 + bt, z = z0 + ct.
+16. T7.14: (Vector equation of plane) n ·(r − r0) = 0 or n · r = n · r0
+17. T7.14 (Linear equation of plane) ax + by + cz + d = 0, where d = −(ax0 + by0 + cz0).
 
 ## Others helpful theorems and formulas 
 
