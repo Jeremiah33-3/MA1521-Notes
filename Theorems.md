@@ -71,6 +71,23 @@
 16. T7.14: (Vector equation of plane) n ·(r − r0) = 0 or n · r = n · r0
 17. T7.14 (Linear equation of plane) ax + by + cz + d = 0, where d = −(ax0 + by0 + cz0).
 
+## Vector functions of several variables 
+
+> A vector-valued function r(t) is a mapping from its domain D ⊆ R to its range R ⊆ V3, so that for each t ∈ D, r(t) = v for exactly one vector v ∈ V3.
+> r(t) = f (t)i + g(t)j + h(t)k
+> or r(t) = <f (t),g(t), h(t)>
+
+1. Definition 8.1. The derivative r'(t) of the vector-valued function r(t) is defined by r'(t) = lim ( 🔺t→0) ( (r(t +🔺t) − r(t)) / 🔺t) for any values of t for which the limit exists.
+2. Theorem 8.1 (Derivative of Vector-valued Function) Let r(t) = <f (t),g(t), h(t)> and suppose that the components f , g and h are all differentiable at
+t = a. Then r is differentiable at t = a and its derivative is given by r'(a) = <f'(a),g'(a), h'(a)>.
+3. Theorem 8.2 (Derivative Rules). pg 154
+4. Theorem 8.3 (Arc Length Formula) Let C be the curve given by r(t) = <f (t),g(t), h(t)>, a ≤ t ≤ b where f', g' and h' are continuous. If C is traversed exactly once as t increases from a to b, then its length is s = int b a ( sqrt(f'(t)^2 + g'(t)^2 + h'(t)^2) dt ) = int b a( ||r'(t)|| dt)
+5. Definition 8.2. A function f of two variables is a rule that assigns to each ordered pair of real numbers (x,y) in a set D ⊆ R2 = R × R a unique real number denoted by f (x,y).
+6. Definition 8.3 (Level Curve). A level curve of f (x,y) is the two-dimensional graph of the equation f (x,y) = k for some constant k.
+7. Definition 8.4 (Contour Plot). A contour plot of f (x,y) is a graph of numerous level curves f (x,y) = k, for representative values of k.
+8. Definition 8.5. A surface is a cylinder if there is a plane P such that all the planes parallel to P intersect the surface in the same curve (when viewed in 2-dimension).
+
+
 ## Others helpful theorems and formulas 
 
 1. Trigonometric identities
