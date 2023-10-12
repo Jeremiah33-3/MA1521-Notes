@@ -86,7 +86,22 @@ t = a. Then r is differentiable at t = a and its derivative is given by r'(a) = 
 6. Definition 8.3 (Level Curve). A level curve of f (x,y) is the two-dimensional graph of the equation f (x,y) = k for some constant k.
 7. Definition 8.4 (Contour Plot). A contour plot of f (x,y) is a graph of numerous level curves f (x,y) = k, for representative values of k.
 8. Definition 8.5. A surface is a cylinder if there is a plane P such that all the planes parallel to P intersect the surface in the same curve (when viewed in 2-dimension).
-
+9. Definition 8.6 (Quadric surface) A quadric surface is the graph of a second-degree equation in three variables x, y and z: Ax2 + By2 +Cz2 + Dxy + Eyz + Fxz + Gx + Hy + Iz + J = 0; where A, B, ..., J are constants.
+10. Definition 8.7 (Elliptic paraboloid – symmetric about the z-axis). x^2/a^2 + y^2/b^2= z/c (vertex of the parabola is when the three variables are 0)
+11. Definition 8.8 (Ellipsoid) If a = b = c, then the ellipsoid is a sphere:  x^2/a^2 + y^2/b^2 + z^2/c^2 = 1
+12. Definition 8.9. (function of three var) is is a rule that assigns to each ordered triple of real numbers (x,y, z) in a set D ⊆ R3 = R × R × R a unique real number denoted by f (x,y, z).
+13. Definition 8.10 (Level Surface). A level surface of f (x,y, z) is the three-dimensional graph of the equation f (x,y, z) = k for some constant k.
+14. Definition 8.11 (Partial Deriavative) If f is a function of two variables, its partial derivatives are the functions fx and fy defined by: fx(x,y) = lim(h→0)f (x + h,y) − f (x,y) / h, and fy(x,y) = lim(h→0)f (x,y + h) − f (x,y) / h.
+   - the partial derivatives fx(a,b) and fy(a,b) can be interpreted geometrically as: The slopes of the tangent lines at P (a,b,c) to the traces C1 and C2 of S in the planes y = band x = a.
+   - for three var, pariative deriative, treat two of the three var as constants
+   - can use implicit differentiation for implicitly defined functions (e.g. x^3 + y^3 + z^3 + 6xyz = 1)
+15. higher order partial deriavative > fxx, fxy, fyx, fyy
+16. Theorem 8.4 (Clairaut’s Theorem). Suppose f is defined on a disk D that contains (a,b). If the functions fxy and fyx are both continuous on D, then fxy(a,b) = fyx(a,b).
+   - partial deriavatives of order 3 and higher can also be defined, fxyy = (fxy)y
+   - using Clairaut's theorem, fxyy = fyxy = fyyx if these functions are continuous
+17. Theorem 8.5 (Equation of Tangent Plane).Suppose f (x,y) has continuous first partial derivatives at (a,b). A normal vector to the tangent plane at (a,b, f (a,b)) to the surface z = f (x,y) is <fx(a,b), fy(a,b),−1>.
+   - Further, an equation of the tangent plane is given by fx(a,b)(x − a) + fy(a,b)(y − b) − (z − f (a,b)) = 0
+   - or z = f (a,b) + fx(a,b)(x − a) + fy(a,b)(y − b)
 
 ## Others helpful theorems and formulas 
 
