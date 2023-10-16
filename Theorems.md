@@ -102,6 +102,25 @@ t = a. Then r is differentiable at t = a and its derivative is given by r'(a) = 
 17. Theorem 8.5 (Equation of Tangent Plane).Suppose f (x,y) has continuous first partial derivatives at (a,b). A normal vector to the tangent plane at (a,b, f (a,b)) to the surface z = f (x,y) is <fx(a,b), fy(a,b),−1>.
    - Further, an equation of the tangent plane is given by fx(a,b)(x − a) + fy(a,b)(y − b) − (z − f (a,b)) = 0
    - or z = f (a,b) + fx(a,b)(x − a) + fy(a,b)(y − b)
+18. Definition 8.12. Informally, we say that f is differentiable at (a,b) if the tangent plane at (a,b) is a good approximation to f at points close to (a,b).
+19. Theorem 8.6 (The Chain Rule - Case 1). dz/dt = ∂f/∂x · dx/dt + ∂f/∂y · dy/dt .
+20. Theorem 8.7 (The Chain Rule - Case 2) Suppose that z = f (x,y) is a differentiable function of x and y, where x = g(s, t) and y = h(s, t) are both differentiable functions of s and t. Then
+   - ∂z/∂s = ∂f/∂x · ∂x/∂s + ∂f/∂y · ∂y/∂s,
+   - ∂z/∂t = ∂f/∂x · ∂x/∂t + ∂f/∂y · ∂y/∂t
+21. Theorem 8.8 (The Chain Rule - General Version). Suppose that u is a differentiable function of n variables x1,..., xn, and each xj is a differentiable function of m variables t1,..., tm. Then u is a function of t1,..., tm and
+   - ∂u/∂ti = ∂u/∂x1 · ∂x1/∂ti + ∂u/∂x2 · ∂x2/∂ti + ··· + ∂u/∂xn · ∂xn/∂t
+   - for each i = 1,...,m.
+22. Theorem 8.9 (Implicit Differentiation: Two Independent Variables). Suppose the equation F(x,y, z) = 0, where F is differentiable, defines z implicitly as a differentiable function of x and y. Then,
+   - ∂z/∂x = −Fx(x,y, z)/ Fz(x,y, z),
+   - ∂z/∂y = −Fy(x,y, z) / Fz(x,y, z)
+   - provided Fz(x,y, z) , 0
+23. Definition 8.13. Let z = f (x,y). Suppose 🔺x and 🔺y are increments in the independent variable x and y respectively. Then the increment in z is defined by 🔺z = f(x + 🔺x, y + 🔺y) - f(x,y)
+24. Definition 8.14.
+Let z = f (x,y). Suppose 🔺x and 🔺y are increments in the independent variable x and y
+respectively. Then the differentials of the independent variables x and y are dx = 🔺x, dy = 🔺y. The differential (or total differential) of the dependent variable z is dz = fx(x,y)dx + fy(x,y)dy.
+25. Theorem 8.10.
+Suppose f is differentiable at (a,b). Let 4x and 4y be small increments in x and y respectively
+from (a,b). Then 🔺z ≈ dz = fx(a,b)dx + fy(a,b)dy = fx(a,b)🔺x + fy(a,b)🔺y.
 
 ## Others helpful theorems and formulas 
 
