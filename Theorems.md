@@ -118,9 +118,34 @@ t = a. Then r is differentiable at t = a and its derivative is given by r'(a) = 
 24. Definition 8.14.
 Let z = f (x,y). Suppose 🔺x and 🔺y are increments in the independent variable x and y
 respectively. Then the differentials of the independent variables x and y are dx = 🔺x, dy = 🔺y. The differential (or total differential) of the dependent variable z is dz = fx(x,y)dx + fy(x,y)dy.
-25. Theorem 8.10.
-Suppose f is differentiable at (a,b). Let 4x and 4y be small increments in x and y respectively
-from (a,b). Then 🔺z ≈ dz = fx(a,b)dx + fy(a,b)dy = fx(a,b)🔺x + fy(a,b)🔺y.
+25. Theorem 8.10. Suppose f is differentiable at (a,b). Let 4x and 4y be small increments in x and y respectively from (a,b). Then 🔺z ≈ dz = fx(a,b)dx + fy(a,b)dy = fx(a,b)🔺x + fy(a,b)🔺y.
+26. Definition 8.15 (Directional Derivative). The directional derivative of f (x,y) at (x0,y0) in the direction of unit vector u = <a,b> is Duf(x0,y0) = lim(h→0) (f (x0 + ha,y0 + hb) − f (x0,y0) ) / h _provided this limit exists_.
+26. Theorem 8.11 (Computing Directional Derivative).
+If f (x,y) is a differentiable function, then f has a directional derivative in the direction of any unit vector u = <a,b> and Duf (x,y) = fx(x,y)a + fy(x,y)b.
+   - We can rewrite it in terms of vectors: Duf (x,y) = <fx, fy> · ha,bi = <fx, fy> · u
+27. Definition 8.16 (Gradient). The gradient of f (x,y) is the vector-valued function ∇f (x,y) = <fx, fy> = fxi + fyj = ∂f/∂x · i + ∂f/∂y · j provided both partial derivatives exist
+   - 'del f'
+28. Definition 8.17 (3-D Directional Derivative). The directional derivative of f (x,y, z) at (x0,y0, z0) in the direction of unit vector u = <a,b,c> is Duf (x0,y0, z0) = lim(h→0)f (x0 + ha,y0 + hb, z0 + hc) − f (x0,y0, z0)  / h _provided this limit exists_.
+29. Theorem 8.12 (Computing 3-D Directional Derivative). Duf (x0,y0, z0) = ∇f (x0,y0, z0) · u where ∇f = <fx, fy, fz> = ∂f/∂x · i + ∂f/∂y · j + ∂f/∂z · k is the gradient vector.
+30. Theorem 8.13 (Level Curve vs ∇f; geometric significance or intepretation). Suppose f (x,y) is differentiable function of x and y at (x0,y0). Suppose ∇f (x0,y0) != 0. Then ∇f (x0,y0) is perpendicular/normal to the level curve f (x,y) = k at the point (x0,y0) where f (x0,y0) = k.
+31. Theorem 8.14 (Level Surface vs ∇f ). Suppose F(x,y, z) is differentiable function of x, y and z at (x0,y0, z0). Suppose S is the level surface F(x,y, z) = k containing (x0,y0, z0). Let C be any curve that lies on S and passes through (x0,y0, z0). Let r(t) be a parametric equation of C such that r(t0) = <x0,y0, z0>. Suppose ∇F(x0,y0, z0) , 0. Then ∇F(x0,y0, z0) · r'(t0) = 0, That is, the ∇F(x0,y0, z0) is perpendicular/normal to tangent vector r'(t0) to any curve C on the surface S that passes through (x0,y0, z0).
+32. Theorem 8.15 (Tangent Plane to Level Surface equation). ∇F(x0,y0, z0) · <x − x0,y − y0, z − z0> = 0 or equivalently, Fx(x0,y0, z0)(x − x0) + Fy(x0,y0, z0)(y − y0) + Fz(x0,y0, z0)(z − z0) = 0.
+33. Theorem 8.16 (Maximizing Rate of Increase/Decrease of f ). Suppose f is a differentiable function of two or three variables. Let P denote a given point. Assume ∇f (P ) , 0. Let u be a unit vector making an angle θ with ∇f . Then Duf (P ) = ||∇f (P )||cosθ. Moreover,
+   - • ∇f (P ) points in the direction of maximum rate of increase of f at P (maximum value of Duf (P ) is ||∇f (P )||)
+   - • −∇f (P ) points in the direction of maximum rate of decrease of f at P (minimum value of Duf (P ) is −||∇f (P )||)
+34. Definition 8.18 (Local and Absolute Maximum). Let f (x,y) : D → R. Then
+   - • f has a local maximum at (a,b) if f (x,y) ≤ f (a,b) for all points in some disk with center (a,b). The number f (a,b) is called a local maximum value.
+   - • f has an absolute maximum at (a,b) if f (x,y) ≤ f (a,b) for all points in the domain D. The number f (a,b) is called a absolute maximum value.
+35. Definition 8.19 (Local and Absolute Minimum). Let f (x,y) : D → R. Then
+   -• f has a local minimum at (a,b) if f (x,y) ≥ f (a,b) for all points in some disk with center (a,b). The number f (a,b) is called a local minimum value.
+   - • f has an absolute minimum at (a,b) if f (x,y) ≥ f (a,b) for all points in the domain D. The number f (a,b) is called a absolute minimum value.
+36. Theorem 8.17. (Finding local extrema) If f has a local maximum or minimum at (a,b) and the first-order derivatives of f exist there, then fx(a,b) = fy(a,b) = 0.
+37. Definition 8.20 (Critical or Stationary Point). Let f (x,y) : D → R. Then a point (a,b) is called a critical point of f if
+   - • fx(a,b) = 0 and fy(a,b) = 0, OR
+   - • one of the partial derivatives does not exist.
+38. Definition 8.21 (Saddle Point). Let f (x,y) : D → R. Then A point (a,b) is called a saddle point of f if
+   - • it is a critical point of f , AND
+   - • every open disk centered at (a,b) contains points (x,y) ∈ D for which f (x,y) < f (a,b) and points (x,y) ∈ D for which f (x,y) > f (a,b).
 
 ## Others helpful theorems and formulas 
 
