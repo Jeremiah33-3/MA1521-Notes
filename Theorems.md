@@ -146,6 +146,26 @@ If f (x,y) is a differentiable function, then f has a directional derivative in 
 38. Definition 8.21 (Saddle Point). Let f (x,y) : D → R. Then A point (a,b) is called a saddle point of f if
    - • it is a critical point of f , AND
    - • every open disk centered at (a,b) contains points (x,y) ∈ D for which f (x,y) < f (a,b) and points (x,y) ∈ D for which f (x,y) > f (a,b).
+39. Theorem 8.18 (Second Derivative Test). Suppose f (x,y) has continuous second-order partial derivatives on some open disk centered at (a,b). Suppose fx(a,b) = fy(a,b) = 0 (that is (a,b) is a critical point). Define the discriminant D for the point (a,b) by D = D(a,b) = fxx(a,b)fyy(a,b) − \[fxy(a,b)]^2
+   - (a) If D > 0 and fxx(a,b) > 0, then f (a,b) is a local minimum.
+   - (b) If D > 0 and fxx(a,b) < 0, then f (a,b) is a local maximum.
+   - (c) If D < 0, then (a,b) is a saddle point of f .
+   - (d) If D = 0, then no conclusion can be drawn.
+
+## Double Integrals
+
+1. Definition 9.1 (Double Integral). The double integral of f over the rectangle R is int( int(Rf(x,y)dA)) = lim(m,n→∞) sum(m i=1 sum(nj=1 f (x∗ij,y∗ij)🔺A ))provided the limit exists and is the same for any choice of the sample points (x∗ij,y∗ij) in Rij, for 1 ≤ i ≤ m, 1 ≤ j ≤ n. When this happens, we say that f is integrable over R
+2. Theorem 9.1 (Volume as a Double Integral). If f (x,y) ≥ 0, the volume V of the solid that lies above the rectangle R and below the surface z = f (x,y) is V = int (int (R f (x,y)dA))
+3. properties of the doble integral -- pg 198 ➡️ sum, constant multiplication, greater/equal to
+4. Definition 9.2 (Iterated Integral).
+   - int( b a int( d c f (x,y)dy ) dx) means we first integrate with respect to y from c to d (keeping x fixed) and then with respect to x from a to b.
+   - int( d c int( b a f (x,y)dx ) dy) means we first integrate with respect to x from a to b (keeping y fixed) and then with respect to y from c to d.
+5. Theorem 9.2 (Fubini's Theorem): If f is continuous on the rectangle R = [a,b] × [c,d], then int( int( R f (x,y)dA)) =  int( b a int( d c f (x,y)dy )dx) = int( d c int( b a f (x,y)dx) dy). More generally, this is true if we assume that f is bounded on R, f is discontinuous only on a finite number of smooth curves, and the iterated integrals exist.
+6. Theorem 9.3 (A Special Case). int( int( R g(x)h(y)dA )) = int( b a g(x)dx) int( d c h(y)dy) where R = [a,b] × [c, d].
+7. Definition 9.3. Type I Region -- A plane region D is said to be of Type I if it lies between the graphs of two continuous functions of x, that is, D = {(x,y) : a ≤ x ≤ b, g1(x) ≤ y ≤ g2(x)} _where g1(x) and g2(x) are continuous on [a,b]._
+8. Definition 9.4. Type II Region -- A plane region D is said to be of Type II if it lies between the graphs of two continuous functions of y, that is, D = {(x,y) : c ≤ y ≤ d, h1(y) ≤ x ≤ h2(y)} where h1(y) and h2(y) are continuous on [c, d].
+9. Theorem 9.4. Double Integral over Type I Domain -- If f is continuous on a Type I domain D such that D = {(x,y) : a ≤ x ≤ b, g1(x) ≤ y ≤ g2(x)} then int( int( D f (x,y)dA)) = int( b a int( g2(x) g1(x) f (x,y)dy )dx).
+10. Theorem 9.5. Double Integral over Type II Domain -- If f is continuous on a Type II domain D such that D = {(x,y) : c ≤ y ≤ d, h1(y) ≤ x ≤ h2(y)} then int( int (D f (x,y)dA)) = int( d c int( h2(y) h1(y) f (x,y)dx )dy).
 
 ## Others helpful theorems and formulas 
 
