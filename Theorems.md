@@ -166,6 +166,7 @@ If f (x,y) is a differentiable function, then f has a directional derivative in 
 8. Definition 9.4. Type II Region -- A plane region D is said to be of Type II if it lies between the graphs of two continuous functions of y, that is, D = {(x,y) : c ≤ y ≤ d, h1(y) ≤ x ≤ h2(y)} where h1(y) and h2(y) are continuous on [c, d].
 9. Theorem 9.4. Double Integral over Type I Domain -- If f is continuous on a Type I domain D such that D = {(x,y) : a ≤ x ≤ b, g1(x) ≤ y ≤ g2(x)} then int( int( D f (x,y)dA)) = int( b a int( g2(x) g1(x) f (x,y)dy )dx).
 10. Theorem 9.5. Double Integral over Type II Domain -- If f is continuous on a Type II domain D such that D = {(x,y) : c ≤ y ≤ d, h1(y) ≤ x ≤ h2(y)} then int( int (D f (x,y)dA)) = int( d c int( h2(y) h1(y) f (x,y)dx )dy).
+11. Theorem 9.6. Additivity With Respect to Domain int( int( Df (x,y)dA)) = int( int(D1f (x,y)dA)) + ··· + int( int (Dnf (x,y)dA)).
 
 ## Others helpful theorems and formulas 
 
