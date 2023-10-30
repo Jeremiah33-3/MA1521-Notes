@@ -170,6 +170,10 @@ If f (x,y) is a differentiable function, then f has a directional derivative in 
 12. Theorem 9.7: int( int( D \[f (x,y) + g(x,y)] dA)) = int ( int(D f (x,y)dA)) + int( int (D g(x,y)dA))
 13. Theorem 9.8: int(int(D cf (x,y)dA)) = c int( int( Df (x,y)dA))
 14. Theorem 9.9: If f (x,y) ≥ g(x,y) for all (x,y) ∈ D then int ( int( D f (x,y)dA )) ≥ int ( int (D g(x,y)dA))
+15. Theorem 9.10. Area of plane region Let f (x,y) = 1 over a given region D. Then the area of D is A(D) = int( int (D 1dA))
+16. Theorem 9.11. Polar Coordinates Versus Rectangle Coordinates: r^2 = x^2 + y^2, x = r cosθ, y = r sinθ.
+17. Definition 9.5 (Polar Rectangle). A polar rectangle is a region R = {(r,θ) : a ≤ r ≤ b, α ≤ θ ≤ β}.
+18. Theorem 9.12. Change to Polar Coordinates in Double Integral: If f is continuous on a polar rectangle R given by R = {(r,θ) : 0 ≤ a ≤ r ≤ b,α ≤ θ ≤ β} where 0 ≤ β − α ≤ 2π, then int int (R f (x,y)dA ) = int( β α int( b a f (r cosθ, r sinθ)r dr) dθ).
 
 ## Others helpful theorems and formulas 
 
