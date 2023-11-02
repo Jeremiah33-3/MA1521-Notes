@@ -174,6 +174,16 @@ If f (x,y) is a differentiable function, then f has a directional derivative in 
 16. Theorem 9.11. Polar Coordinates Versus Rectangle Coordinates: r^2 = x^2 + y^2, x = r cosθ, y = r sinθ.
 17. Definition 9.5 (Polar Rectangle). A polar rectangle is a region R = {(r,θ) : a ≤ r ≤ b, α ≤ θ ≤ β}.
 18. Theorem 9.12. Change to Polar Coordinates in Double Integral: If f is continuous on a polar rectangle R given by R = {(r,θ) : 0 ≤ a ≤ r ≤ b,α ≤ θ ≤ β} where 0 ≤ β − α ≤ 2π, then int int (R f (x,y)dA ) = int( β α int( b a f (r cosθ, r sinθ)r dr) dθ).
+19. Surface area of a plane = int ( int D( dS)) = int ( int D ( sqrt(fx^2 + fy^y+ 1) dA))
+
+## Ordinary Differential Equations
+1. Definition: An equation involving x,y and at least one derivative of y (can be separable, separable ODE)
+2. Reduction to Separable Form: This holds for equations of the form y' = g(y / x),
+   - where g is any function of y / x
+   - let v = y / x, --> y = vx, y' = v + xv'
+   - then the equation y' = g(y/x) can be written as v + xv' = g(v) <-> v' = ( g(v) - v) / x, which is separable
+   - can solve for v, then solve for y
+   - note v is also a function of x, independent var here is always x
 
 ## Others helpful theorems and formulas 
 
