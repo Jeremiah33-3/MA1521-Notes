@@ -184,6 +184,9 @@ If f (x,y) is a differentiable function, then f has a directional derivative in 
    - then the equation y' = g(y/x) can be written as v + xv' = g(v) <-> v' = ( g(v) - v) / x, which is separable
    - can solve for v, then solve for y
    - note v is also a function of x, independent var here is always x
+3. A differential equation of the form y' = f (ax + by), where f is continuous and b , 0, can be solved by setting u = ax + by. (If b = 0, then the equation itself is separable.)
+4. Standard form of a linear first order ODE: dy/dx + P(x)y = Q(x) + I(x) --> integrating factor = e^(int (P(x) dx))
+5. An ODE in the form y' + p(x)y = q(x)y^n, where n , 0,1, is called the Bernoulli equation. The functions p(x) and q(x) are continuous functions on an interval J. Let u = y^1−n. Substituting into the Bernoulli equation we get u' + (1 − n)p(x)u = (1 − n)q(x). This is a first order linear ODE.
 
 ## Others helpful theorems and formulas 
 
